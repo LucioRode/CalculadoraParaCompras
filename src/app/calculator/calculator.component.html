@@ -1,0 +1,64 @@
+<!-- Visor/Pantalla ----------------------------------------------------------------------------------------->
+<div class="row w80">
+    <div class="col-12 visor">
+        <span> {{ visor }} </span>
+    </div>
+</div>
+<!-- Fin Visor/Pantalla ----------------------------------------------------------------------------------------->
+<!-- Teclado ----------------------------------------------------------------------------------------->
+<div class="container">
+    <div class="row w80">
+        <div class="col-12">
+            <div class="row">
+                <h3>Costo Total: $ {{ total }} </h3>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-danger btn100" (click)="onReset()">Reset</button>
+            <button class="btn btn-danger btn100">Borrar Item</button>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-4 celda"><button class="tecla" value="7" (click)="teclear('7')"><b>7</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="8" (click)="teclear('8')"><b>8</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="9" (click)="teclear('9')"><b>9</b></button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 celda"><button class="tecla" value="4" (click)="teclear('4')"><b>4</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="5" (click)="teclear('5')"><b>5</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="6" (click)="teclear('6')"><b>6</b></button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 celda"><button class="tecla" value="1" (click)="teclear('1')"><b>1</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="2" (click)="teclear('2')"><b>2</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="3" (click)="teclear('3')"><b>3</b></button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 celda"><button class="tecla" value="0" (click)="teclear('0')"><b>0</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="," (click)="teclear('.')"><b>.</b></button></div>
+                <div class="col-4 celda"><button class="tecla" value="C" (click)="onDelLastItem()"><b>C</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="row">
+                <div class="col12 celda">
+                    <button class="teclaVertical" value="*" (click)="onMultip()"><b>X</b></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col12 celda">
+                    <button class="teclaVertical" value="+" (click)="onSumar()"><img class="carrito" src="https://acinorsa.com.ar/images/carro.png" alt="Carrito de compras"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Teclado ----------------------------------------------------------------------------------------->
